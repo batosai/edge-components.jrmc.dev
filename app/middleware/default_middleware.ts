@@ -26,7 +26,7 @@ export default class DefaultMiddleware {
           }
         },
         readFile: (path: string) => fs.readFileSync(app.viewsPath(`${path}`)).toString(),
-        appVersion: () => JSON.parse(fs.readFileSync(app.makePath('../package.json')).toString()).version,
+        appVersion: () => JSON.parse(fs.readFileSync(app.makePath(`./node_modules/@jrmc/edge-components/package.json`)).toString()).version,
       })
     }
 
