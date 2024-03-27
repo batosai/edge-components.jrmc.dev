@@ -1,0 +1,36 @@
+@layout()
+  @slot('head')
+    <title>Edge components form container</title>
+    <meta name="description" content="" />
+  @end
+
+  @!breadcrumb({
+    items: [
+      { label: 'Components' },
+      { label: 'Form Container' }
+    ]
+  })
+
+  @!section({
+    title: 'Container',
+    about: route('about-container'),
+    template: `@jrmc.form({ method: 'get' })
+  @jrmc.form.control({ name: 'lastname', hint: '3 characters minimum' })
+    @!jrmc.form.input()
+  @end
+@end`
+  })
+
+  @!section({
+    title: 'Container - disabled CSRF',
+    about: route('about-container'),
+    template: `@jrmc.form({ method: 'get', csrf: false })
+  @jrmc.form.control({ name: 'lastname' })
+    @!jrmc.form.input()
+  @end
+@end`
+  })
+
+
+
+@end
