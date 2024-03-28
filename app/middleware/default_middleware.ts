@@ -10,7 +10,7 @@ export default class DefaultMiddleware {
       ctx.view.share({
         up: ctx.up,
         renderRaw: async (template: string) => await ctx.view.renderRaw(template),
-        fakeUsers: ({ currentPage, total }) => {
+        fakeUsers: ({ currentPage, total }: any) => {
           let urls: any = []
           for (let index = 0; index < total; index++) {
             urls.push({ url: `#${index+1}`, page: index+1 })

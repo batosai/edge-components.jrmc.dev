@@ -76,7 +76,7 @@ export default class Up {
    */
   public commit() {
     const headers = Object.assign(
-      UNPOLY_HEADERS.reduce((result, header) => {
+      UNPOLY_HEADERS.reduce((result: any, header: any) => {
         const value = this.ctx.session.flashMessages.get(this.headerToFlashKey(header))
         if (value) {
           result[header] = value
