@@ -10,7 +10,8 @@
     "dev": "node ace serve --watch",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "deploy": "pm2 deploy ecosystem.config.cjs production"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
