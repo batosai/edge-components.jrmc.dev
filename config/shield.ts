@@ -9,8 +9,9 @@ const shieldConfig = defineConfig({
   csp: {
     enabled: env.get('NODE_ENV') === 'production',
     directives: {
-      defaultSrc: ["'self'", 'https://umami.jrmc.dev'],
+      defaultSrc: ["'self'", 'https://umami.jrmc.dev', 'https://picsum.photos'],
       styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", 'data:', 'blob:'],
       scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'", 'https://umami.jrmc.dev'],
       // connectSrc: ["*"]
     },
