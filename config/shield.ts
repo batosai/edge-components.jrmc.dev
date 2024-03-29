@@ -11,7 +11,7 @@ const shieldConfig = defineConfig({
     directives: {
       defaultSrc: ["'self'", 'https://umami.jrmc.dev'],
       styleSrc: ["'self'", "'unsafe-inline'"],
-      imgSrc: ["'self'", 'data:', 'blob:', 'https://fastly.picsum.photos'],
+      imgSrc: ["'self'", 'data:', 'blob:', 'https://fastly.picsum.photos', 'https://picsum.photos'],
       scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'", 'https://umami.jrmc.dev'],
       // connectSrc: ["*"]
     },
