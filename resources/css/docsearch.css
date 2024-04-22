@@ -1,0 +1,40 @@
+/* override docsearch */
+
+:root {
+  --docsearch-primary-color: oklch(var(--p));
+  --docsearch-text-color: oklch(var(--n));
+  --docsearch-spacing: 12px;
+  --docsearch-icon-stroke-width: 1.4;
+  --docsearch-highlight-color: var(--docsearch-primary-color);
+  --docsearch-muted-color: oklch(var(--n) / 0.6);
+  --docsearch-container-background: rgba(101, 108, 133, 0.8);
+  --docsearch-logo-color: var(--docsearch-primary-color);
+
+  /* modal */
+  --docsearch-modal-width: 800px;
+  --docsearch-modal-height: 800px;
+  --docsearch-modal-background: oklch(var(--b2));
+  --docsearch-modal-shadow: none;
+
+  /* hit */
+  --docsearch-hit-height: 56px;
+  --docsearch-hit-color: oklch(var(--n));
+  --docsearch-hit-active-color: oklch(var(--pc));
+  --docsearch-hit-background: oklch(var(--b1));
+  --docsearch-hit-shadow: 0 1px 3px 0 oklch(var(--b2));
+
+  /* footer */
+  --docsearch-footer-height: 44px;
+  --docsearch-footer-background: oklch(var(--b1));
+  --docsearch-footer-shadow: 0;
+}
+.DocSearch-Screen-Icon,
+.DocSearch-Commands {
+  @apply hidden;
+}
+.DocSearch-Input:focus-visible {
+  outline: none;
+}
+.DocSearch-NoResults-Prefill-List li {
+  list-style-type: "";
+}

@@ -1,4 +1,5 @@
 @import './unpoly.css';
+@import './docsearch.css';
 
 @tailwind base;
 @tailwind components;
