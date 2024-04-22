@@ -188,6 +188,6 @@ router
   })
   .as('sitemap')
 
-router.get('/:page', async ({ response, params }) => {
+router.get('/about/:page', async ({ response, params }) => {
   response.redirect().toPath(`/${params.page}/about`)
 })
