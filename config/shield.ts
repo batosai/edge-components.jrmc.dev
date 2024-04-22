@@ -9,7 +9,7 @@ const shieldConfig = defineConfig({
   csp: {
     enabled: env.get('NODE_ENV') === 'production',
     directives: {
-      defaultSrc: ["'self'", 'https://umami.jrmc.dev'],
+      defaultSrc: ["'self'", 'https://umami.jrmc.dev', '*.algolia.net'],
       styleSrc: ["'self'", "'unsafe-inline'"],
       imgSrc: ["'self'", 'data:', 'blob:', 'https://fastly.picsum.photos', 'https://picsum.photos'],
       scriptSrc: ["'self'", "'unsafe-eval'", "'unsafe-inline'", 'https://umami.jrmc.dev'],
