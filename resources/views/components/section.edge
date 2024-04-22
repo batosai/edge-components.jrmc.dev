@@ -1,7 +1,7 @@
 @let(id = dashCase(title))
 
 <div class="flex">
-  <{{jrmc.getTagName($props, 'h2')}} class="text-base font-semibold leading-7 px-2" >
+  <{{jrmc.getTagName($props, 'h2')}} id="{{ id }}" class="text-base font-semibold leading-7 px-2" >
     <a href="#{{ id }}" aria-hidden="true" tabindex="-1" class="text-primary">#</a>
     {{ title }}
   </{{jrmc.getTagName($props, 'h2')}}>
@@ -12,7 +12,7 @@
   @end
 </div>
 
-<div id="{{ id }}" role="tablist" class="{{
+<div role="tablist" class="{{
   html.classNames([
     'tabs',
     'tabs-lifted',
