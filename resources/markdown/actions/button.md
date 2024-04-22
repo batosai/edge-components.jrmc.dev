@@ -1,4 +1,4 @@
-# Button
+# About Button
 
 Doc : [daisyui button](https://daisyui.com/components/button/) 
 

@@ -1,4 +1,4 @@
-# Range slider
+# About Range slider
 
 Doc : [daisyui range slider](https://daisyui.com/components/range/)
 

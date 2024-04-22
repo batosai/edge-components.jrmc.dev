@@ -1,4 +1,4 @@
-# Toast
+# About Toast
 
 Doc : [daisyui toast](https://daisyui.com/components/toast/)
 

@@ -1,4 +1,4 @@
-# Checkbox
+# About Checkbox
 
 Doc : [daisyui checkbox](https://daisyui.com/components/checkbox/)
 

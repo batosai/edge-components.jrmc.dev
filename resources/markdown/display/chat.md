@@ -1,4 +1,4 @@
-# Chat bubble
+# About Chat bubble
 
 Doc : [daisyui chat](https://daisyui.com/components/chat//)
 

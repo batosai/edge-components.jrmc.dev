@@ -1,4 +1,4 @@
-# Dropdown
+# About Dropdown
 
 Doc : [daisyui dropdown](https://daisyui.com/components/dropdown/)
 

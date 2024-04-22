@@ -1,4 +1,4 @@
-# Badge
+# About Badge
 
 Doc : [daisyui badge](https://daisyui.com/components/badge/)
 

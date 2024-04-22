@@ -1,4 +1,4 @@
-# Progress
+# About Progress
 
 Doc : [daisyui progress](https://daisyui.com/components/progress/)
 

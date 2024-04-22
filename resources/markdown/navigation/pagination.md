@@ -1,4 +1,4 @@
-# Pagination
+# About Pagination
 
 Doc : [daisyui pagination](https://daisyui.com/components/pagination/)
 

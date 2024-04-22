@@ -1,4 +1,4 @@
-# Loading
+# About Loading
 
 Doc : [daisyui loading](https://daisyui.com/components/loading/)
 

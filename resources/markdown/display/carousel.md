@@ -1,4 +1,4 @@
-# Carousel
+# About Carousel
 
 Doc : [daisyui carousel](https://daisyui.com/components/carousel/)
 

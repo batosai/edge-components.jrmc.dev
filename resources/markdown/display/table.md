@@ -1,4 +1,4 @@
-# Table
+# About Table
 
 Doc : [daisyui table](https://daisyui.com/components/table/)
 

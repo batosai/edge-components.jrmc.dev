@@ -1,4 +1,4 @@
-# Select
+# About Select
 
 Doc : [daisyui select](https://daisyui.com/components/select/)
 

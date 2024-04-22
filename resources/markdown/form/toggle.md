@@ -1,4 +1,4 @@
-# Toggle
+# About Toggle
 
 Doc : [daisyui toggle](https://daisyui.com/components/toggle/)
 

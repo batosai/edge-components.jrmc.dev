@@ -1,4 +1,4 @@
-# Form Control
+# About Form Control
 
 Doc : [daisyui control](https://daisyui.com/components/input/)
 

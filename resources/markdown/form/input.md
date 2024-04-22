@@ -1,4 +1,4 @@
-# Text Input
+# About Text Input
 
 Doc : [daisyui text input](https://daisyui.com/components/input/)
 

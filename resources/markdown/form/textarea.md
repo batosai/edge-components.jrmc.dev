@@ -1,5 +1,5 @@
 
-# Textarea
+# About Textarea
 
 Doc : [daisyui textarea](https://daisyui.com/components/textarea/)
 

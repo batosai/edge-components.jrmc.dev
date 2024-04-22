@@ -1,4 +1,4 @@
-# Tab
+# About Tab
 
 Doc : [daisyui tab](https://daisyui.com/components/tab/)
 

@@ -1,4 +1,4 @@
-# Avatar
+# About Avatar
 
 Doc : [daisyui avatar](https://daisyui.com/components/avatar/)
 

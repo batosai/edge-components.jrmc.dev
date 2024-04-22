@@ -1,4 +1,4 @@
-# File Input
+# About File Input
 
 Doc : [daisyui file input](https://daisyui.com/components/file-input/)
 

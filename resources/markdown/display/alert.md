@@ -1,4 +1,4 @@
-# Alert
+# About Alert
 
 Doc : [daisyui alert](https://daisyui.com/components/alert/)
 

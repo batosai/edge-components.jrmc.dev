@@ -1,4 +1,4 @@
-# Tooltip
+# About Tooltip
 
 Doc : [daisyui tooltip](https://daisyui.com/components/tooltip/)
 

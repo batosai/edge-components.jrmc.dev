@@ -1,4 +1,4 @@
-# Card
+# About Card
 
 Doc : [daisyui card](https://daisyui.com/components/card/)
 
