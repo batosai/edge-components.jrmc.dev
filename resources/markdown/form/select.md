@@ -4,9 +4,9 @@ Doc : [daisyui select](https://daisyui.com/components/select/)
 
 Select is used to pick a value from a list of options.
 
-| Class name       |   Type     |                                  |
-|------------------|------------|----------------------------------|
-| select 	         | Component  | For `<select>` element           |
+| Class name       | Type       |                                  |
+| ---------------- | ---------- | -------------------------------- |
+| select           | Component  | For `<select>` element           |
 | select-bordered  | Modifier   | Adds border to select            |
 | select-ghost     | Modifier   | Adds ghost style to select       |
 | select-primary   | Modifier   | Adds `primary` color to select   |
@@ -23,11 +23,11 @@ Select is used to pick a value from a list of options.
 
 ## Specific params
 
-| Param name       |   Type           |                             |
-|------------------|------------------|-----------------------------|
-| options 	       |   object         | object of options elements  |
-| -- text 	       |   string         | text of option element      |
-| -- value 	       |   string         | value of option element     |
-| -- disabled 	   |   boolean        |                             |
-| -- selected 	   |   boolean        |                             |
-| value 	         |   string/array   | default value(s)            |
+| Param name  | Type         |                            |
+| ----------- | ------------ | -------------------------- |
+| options     | object       | object of options elements |
+| -- text     | string       | text of option element     |
+| -- value    | string       | value of option element    |
+| -- disabled | boolean      |                            |
+| -- selected | boolean      |                            |
+| value       | string/array | default value(s)           |

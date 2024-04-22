@@ -4,8 +4,8 @@ Doc : [daisyui badge](https://daisyui.com/components/badge/)
 
 Badges are used to inform user of the status of specific data.
 
-| Class name      |   Type     |                                          |
-|-----------------|------------|------------------------------------------|
+| Class name      | Type       |                                          |
+| --------------- | ---------- | ---------------------------------------- |
 | badge           | Component  | Container element                        |
 | badge-outline   | Modifier   | transparent badge with [colorful] border |
 | badge-lg        | Responsive | badge with large size                    |

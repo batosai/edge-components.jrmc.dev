@@ -8,7 +8,6 @@ Pagination is a group of buttons that allow the user to navigate between a set o
 
 [Adonis pagination](https://docs.adonisjs.com/guides/database/pagination)
 
-
-| Class name    |   Type     |                                  |
-|---------------|------------|----------------------------------|
-| btn-group     | Component  | Groups buttons together          |
+| Class name | Type      |                         |
+| ---------- | --------- | ----------------------- |
+| btn-group  | Component | Groups buttons together |

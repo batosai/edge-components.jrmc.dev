@@ -4,9 +4,9 @@ Doc : [daisyui text input](https://daisyui.com/components/input/)
 
 Text Input is a simple input field.
 
-| Class name      |   Type     |                                 |
-|-----------------|------------|---------------------------------|
-| input 	        | Component  | For `<input>` element           |
+| Class name      | Type       |                                 |
+| --------------- | ---------- | ------------------------------- |
+| input           | Component  | For `<input>` element           |
 | input-bordered  | Modifier   | Adds border to input            |
 | input-ghost     | Modifier   | Adds ghost style to input       |
 | input-primary   | Modifier   | Adds `primary` color to input   |

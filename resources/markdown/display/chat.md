@@ -4,8 +4,8 @@ Doc : [daisyui chat](https://daisyui.com/components/chat//)
 
 Chat bubbles are used to show one line of conversation and all its data, including the author image, author name, time, etc.
 
-| Class name            |   Type    |                                                         |
-|-----------------------|-----------|---------------------------------------------------------|
+| Class name            | Type      |                                                         |
+| --------------------- | --------- | ------------------------------------------------------- |
 | chat                  | Component | Container for one line of conversation and all its data |
 | chat-start            | Modifier  | Aligns `chat` to left (required)                        |
 | chat-end              | Modifier  | Aligns `chat` to end (required)                         |

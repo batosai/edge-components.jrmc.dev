@@ -38,7 +38,7 @@ export default defineConfig({
     () => import('#providers/shiki_provider'),
     () => import('#providers/unpoly_provider'),
     () => import('#providers/markdown_provider'),
-    () => import('@jrmc/edge-components/edge_components_provider')
+    () => import('@jrmc/edge-components/edge_components_provider'),
   ],
 
   /*
@@ -49,7 +49,11 @@ export default defineConfig({
   | List of modules to import before starting the application.
   |
   */
-  preloads: [() => import('#start/routes'), () => import('#start/kernel'), () => import('#start/view')],
+  preloads: [
+    () => import('#start/routes'),
+    () => import('#start/kernel'),
+    () => import('#start/view'),
+  ],
 
   metaFiles: [
     {

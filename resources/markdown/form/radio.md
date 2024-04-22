@@ -4,9 +4,9 @@ Doc : [daisyui radio](https://daisyui.com/components/radio/)
 
 Radio buttons allow the user to select one option from a set.
 
-| Class name      |   Type     |                                 |
-|-----------------|------------|---------------------------------|
-| radio 	        | Component  | For radio input                 |
+| Class name      | Type       |                                 |
+| --------------- | ---------- | ------------------------------- |
+| radio           | Component  | For radio input                 |
 | radio-primary   | Modifier   | Adds `primary` color to radio   |
 | radio-secondary | Modifier   | Adds `secondary` color to radio |
 | radio-accent    | Modifier   | Adds `accent` color to radio    |
@@ -17,7 +17,7 @@ Radio buttons allow the user to select one option from a set.
 
 ## Specific params
 
-| Param name       |   Type           |                |
-|------------------|------------------|----------------|
-| checked 	       |   boolean        | default check  |
-| disabled 	       |   boolean        |                |
+| Param name | Type    |               |
+| ---------- | ------- | ------------- |
+| checked    | boolean | default check |
+| disabled   | boolean |               |

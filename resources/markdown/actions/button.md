@@ -1,11 +1,11 @@
 # About Button
 
-Doc : [daisyui button](https://daisyui.com/components/button/) 
+Doc : [daisyui button](https://daisyui.com/components/button/)
 
 Buttons allows user to take actions or make choices.
 
-| Class name    |   Type     |                                        |
-|---------------|------------|----------------------------------------|
+| Class name    | Type       |                                        |
+| ------------- | ---------- | -------------------------------------- |
 | btn           | Component  | Button                                 |
 | btn-neutral   | Modifier   | Button with `neutral` color            |
 | btn-primary   | Modifier   | Button with `primary` color            |
@@ -30,7 +30,6 @@ Buttons allows user to take actions or make choices.
 | btn-block     | Responsive | Full width button                      |
 | btn-circle    | Responsive | Circle button with a 1:1 ratio         |
 | btn-square    | Responsive | Square button with a 1:1 ratio         |
-
 
 /!\ Deprecated
 

@@ -13,7 +13,6 @@ import docsearch from '@docsearch/js'
 themeChange()
 new ClipboardJS('.btn-clipboard')
 
-
 // Unpoly
 up.link.config.followSelectors.push('a[href]')
 up.form.config.submitSelectors.push(['form'])
@@ -22,7 +21,6 @@ up.feedback.config.navSelectors.push(['nav'])
 
 up.layer.config.drawer.size = 'large'
 up.layer.config.drawer.position = 'right'
-
 
 // Alpine
 Alpine.start()
@@ -33,4 +31,4 @@ docsearch({
   appId: 'UMZPU4KZ1I',
   indexName: 'edge-components',
   apiKey: '97e7c2b7a7dc8498613878efa94d8625',
-});
+})

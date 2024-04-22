@@ -4,9 +4,9 @@ Doc : [daisyui file input](https://daisyui.com/components/file-input/)
 
 File Input is a an input field for uploading files.
 
-| Class name           |   Type     |                                 |
-|----------------------|------------|---------------------------------|
-| file-input 	         | Component  | For `<input>` element           |
+| Class name           | Type       |                                 |
+| -------------------- | ---------- | ------------------------------- |
+| file-input           | Component  | For `<input>` element           |
 | file-input-bordered  | Modifier   | Adds border to input            |
 | file-input-ghost     | Modifier   | Adds ghost style to input       |
 | file-input-primary   | Modifier   | Adds `primary` color to input   |

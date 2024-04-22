@@ -5,7 +5,6 @@ import fs from 'node:fs'
 
 export default class DefaultMiddleware {
   async handle(ctx: HttpContext, next: NextFn) {
-
     if ('view' in ctx) {
       ctx.view.share({
         up: ctx.up,
@@ -13,20 +12,26 @@ export default class DefaultMiddleware {
         fakeUsers: ({ currentPage, total }: any) => {
           let urls: any = []
           for (let index = 0; index < total; index++) {
-            urls.push({ url: `#${index+1}`, page: index+1 })
+            urls.push({ url: `#${index + 1}`, page: index + 1 })
           }
 
           return {
             currentPage,
             lastPage: urls.length,
             getUrl: (index: any) => urls[index].url,
-            getUrlsForRange: (first: string, last: string) => (urls.filter((url: any) => (url.page >= first && url.page <= last))),
-            getPreviousPageUrl: () => urls[currentPage-1].url,
-            getNextPageUrl: () => urls[currentPage+1].url,
+            getUrlsForRange: (first: string, last: string) =>
+              urls.filter((url: any) => url.page >= first && url.page <= last),
+            getPreviousPageUrl: () => urls[currentPage - 1].url,
+            getNextPageUrl: () => urls[currentPage + 1].url,
           }
         },
         readFile: (path: string) => fs.readFileSync(app.viewsPath(`${path}`)).toString(),
-        appVersion: () => JSON.parse(fs.readFileSync(app.makePath(`./node_modules/@jrmc/edge-components/package.json`)).toString()).version,
+        appVersion: () =>
+          JSON.parse(
+            fs
+              .readFileSync(app.makePath(`./node_modules/@jrmc/edge-components/package.json`))
+              .toString()
+          ).version,
       })
     }
 

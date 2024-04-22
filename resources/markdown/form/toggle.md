@@ -4,9 +4,9 @@ Doc : [daisyui toggle](https://daisyui.com/components/toggle/)
 
 Toggle is a checkbox that is styled to look like a switch button.
 
-| Class name       |   Type     |                                  |
-|------------------|------------|----------------------------------|
-| toggle 	         | Component  | For input checkbox               |
+| Class name       | Type       |                                  |
+| ---------------- | ---------- | -------------------------------- |
+| toggle           | Component  | For input checkbox               |
 | toggle-primary   | Modifier   | Adds `primary` color to toggle   |
 | toggle-secondary | Modifier   | Adds `secondary` color to toggle |
 | toggle-accent    | Modifier   | Adds `accent` color to toggle    |
@@ -17,7 +17,7 @@ Toggle is a checkbox that is styled to look like a switch button.
 
 ## Specific params
 
-| Param name       |   Type           |                |
-|------------------|------------------|----------------|
-| checked 	       |   boolean        | default check  |
-| disabled 	       |   boolean        |                |
+| Param name | Type    |               |
+| ---------- | ------- | ------------- |
+| checked    | boolean | default check |
+| disabled   | boolean |               |

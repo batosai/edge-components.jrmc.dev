@@ -17,11 +17,13 @@ export default class ShikiProvider {
 
       const highlighter = await getHighlighter({
         themes: ['one-dark-pro'],
-        langs: ['html', 'sh', 'javascript']
+        langs: ['html', 'sh', 'javascript'],
       })
       await highlighter.loadLanguage(myLanguage)
 
-      edge.default.global('codeToHtml', (code: string, opt: CodeToHastOptions) => highlighter.codeToHtml(code, { theme: 'one-dark-pro', ...opt }))
+      edge.default.global('codeToHtml', (code: string, opt: CodeToHastOptions) =>
+        highlighter.codeToHtml(code, { theme: 'one-dark-pro', ...opt })
+      )
     }
   }
 }

@@ -15,17 +15,12 @@ export default class UnpolyProvider {
    * The container bindings have booted
    */
   async boot() {
-    HttpContext.getter('up', function (this: HttpContext) {
-      return new Up(this)
-    }, true)
-
-
+    HttpContext.getter(
+      'up',
+      function (this: HttpContext) {
+        return new Up(this)
+      },
+      true
+    )
   }
 }
-
-
-
-
-
-
-

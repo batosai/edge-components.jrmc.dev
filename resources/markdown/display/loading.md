@@ -4,8 +4,8 @@ Doc : [daisyui loading](https://daisyui.com/components/loading/)
 
 Loading shows an animation to indicate that something is loading.
 
-| Class name       |   Type    |                              |
-|------------------|-----------|------------------------------|
+| Class name       | Type      |                              |
+| ---------------- | --------- | ---------------------------- |
 | loading          | Component | loading element              |
 | loading-spinner  | Modifier  | Shows the spinner animation  |
 | loading-dots     | Modifier  | Shows the dots animation     |
