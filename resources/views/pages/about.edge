@@ -4,6 +4,12 @@
     <meta name="description" content="" />
   @end
 
+  @if(up.isDrawer())
+    @jrmc.button.link({ 'up-dismiss': 'true', class: 'btn-circle btn-sm btn-primary m-2' })
+      @svg('tabler:arrow-left')
+    @end
+  @end
+
   <div class="m-4 max-w-none prose">
     {{{ await markdownToHtml(readFile(`../markdown/${group}/${name}.md`)) }}}
   </div>
