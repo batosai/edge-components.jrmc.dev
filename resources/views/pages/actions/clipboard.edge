@@ -1,0 +1,48 @@
+@layout()
+  @slot('head')
+    <title>Edge components copy to clipboard</title>
+    <meta name="description" content="" />
+  @end
+
+  @!breadcrumb({
+    items: [
+      { label: 'Components' },
+      { label: 'Copy to clipboard' }
+    ]
+  })
+
+  <div class="m-4">
+    @!jrmc.alert.info({ text: 'Clipboard required alpineJS' })
+  </div>
+
+  @!section({
+    title: 'Copy to clipboard',
+    as: 'h1',
+    template: `@!jrmc.clipboard({ text: 'Copy to Clipboard', value: 'copied 1' })`
+  })
+
+  @!section({
+    title: 'Copy to clipboard - simple icon',
+    template: `@!jrmc.clipboard({ class: 'btn-circle btn-secondary', value: 'copied 2' })`
+  })
+
+
+  @!section({
+    title: 'Copy to clipboard - custom',
+    template: `@jrmc.clipboard({ value: 'ok4' })
+  @slot('copy')
+    <span class="inline-flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+      Copy to Clipboard
+    </span>
+  @end
+  @slot('copied')
+    <span class="inline-flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 12.6111L8.92308 17.5L20 6.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Copied to Clipboard
+    </span>
+  @end
+@end
+`})
+
+@end

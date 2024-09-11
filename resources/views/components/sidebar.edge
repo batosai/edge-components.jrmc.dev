@@ -1,15 +1,15 @@
 @jrmc.card({ class: 'bg-base-100 shadow-xl mx-4 mt-4 z-20 sticky top-5 left-0' })
   @slot('top')
-  <ul class="flex flew-row items-center space-x-3 m-2 w-full">
+  <ul class="flex items-center w-full m-2 space-x-3 flew-row">
     <li class="avatar">
       <div class="w-8 h-8">
         <img src="/edge.jpeg" loading="lazy" alt="Edge" />
       </div>
-      <div class="text-2xl mx-4">+</div>
+      <div class="mx-4 text-2xl">+</div>
       <div class="w-8 h-8">
         <img src="/daisyui.png" loading="lazy" alt="DaisyUI" />
       </div>
-      <div class="text-2xl mx-4">=</div>
+      <div class="mx-4 text-2xl">=</div>
     </li>
     <li class="basis-1/2">
       <div class="font-bold">
@@ -27,7 +27,7 @@
 @end
 
 <nav class="overflow-y-scroll" style="max-height: calc(100% - 125px );">
-  <ul class="menu menu-compact text-base-content rounded-box p-4">
+  <ul class="p-4 menu menu-compact text-base-content rounded-box">
 
     <li>
       <details {{ html.classNames([ { 'open' : request.matchesRoute(['button', 'drawer', 'dropdown', 'modal']) }]) }}>
@@ -47,6 +47,9 @@
           </li>
           <li>
             @!sidebar.link({ text: 'Modal', href: route('modal') })
+          </li>
+          <li>
+            @!sidebar.link({ text: 'Copy to Clipboard', href: route('clipboard'), newly: true })
           </li>
         </ul>
       </details>
@@ -143,6 +146,9 @@
           </li>
           <li>
             @!sidebar.link({ text: 'Input file', href: route('file') })
+          </li>
+          <li>
+            @!sidebar.link({ text: 'Password', href: route('password'), newly: true })
           </li>
         </ul>
       </details>

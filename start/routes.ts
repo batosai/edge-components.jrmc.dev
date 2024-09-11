@@ -33,6 +33,7 @@ router
   .on('/modal/about')
   .render('pages/about', { group: 'actions', name: 'modal' })
   .as('about-modal')
+router.on('/clipboard').render('pages/actions/clipboard').as('clipboard')
 
 router.on('/alert').render('pages/display/alert').as('alert')
 router
@@ -120,6 +121,7 @@ router
   .on('/textarea/about')
   .render('pages/about', { group: 'form', name: 'textarea' })
   .as('about-textarea')
+  router.on('/password').render('pages/form/password').as('password')
 router.on('/toggle').render('pages/form/toggle').as('toggle')
 router
   .on('/toggle/about')
