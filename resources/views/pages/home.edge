@@ -12,9 +12,9 @@
     ]
   })
 
-  <div class="m-4 max-w-none prose">
+  <div class="m-4 prose max-w-none">
 
-    <h1>Edge components v2</h1>
+    <h1>Edge components v3</h1>
     <p>Edge components is a components library for Edge template engine 6 and AdonisJS 6. <br />
     This notably facilitates the use of forms.</p>
 
@@ -38,40 +38,42 @@
     <p>On your project directory, install the dependencies:<br /><a href="https://tailwindcss.com/docs/guides/adonisjs" target="_blank">https://tailwindcss.com/docs/guides/adonisjs</a></p>
 
     {{{ codeToHtml(`# install dependencies
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm install -D tailwindcss @tailwindcss/vite`, { lang: 'sh' }) }}}
 
-# create postcss config file
-touch postcss.config.js
+    <p>Also, make tailwind configs in your vite.config.js</p>
 
-# create tailwind config file
-npx tailwindcss init`, { lang: 'sh' }) }}}
+    {{{ codeToHtml(`import { defineConfig } from 'vite'
+import adonisjs from '@adonisjs/vite/client'
+import tailwindcss from '@tailwindcss/vite'
 
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+    adonisjs({
+      /**
+       * Entrypoints of your application. Each entrypoint will
+       * result in a separate bundle.
+       */
+      entrypoints: ['resources/js/app.js'],
 
-    <p>Set the postcss.config.js.</p>
-
-    {{{ codeToHtml(`export default {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-}`, { lang: 'javascript' }) }}}
-
-    <p>Also, make tailwind configs minumum in tailwind.config.js</p>
-
-    {{{ codeToHtml(`/** @type {import('tailwindcss').Config} */
-
-import edgeComponent from '@jrmc/edge-components/tailwind.config'
-
-module.exports = {
-  content: ['./resources/views/**/*.edge', ...edgeComponent.content],
-  plugins: [...edgeComponent.plugins],
-}`, { lang: 'javascript' }) }}}
+      /**
+       * Paths to watch and reload the browser on file change
+       */
+      reload: ['resources/views/**/*.edge'],
+    }),
+  ],
+})
+`, { lang: 'javascript' }) }}}
 
     <p>add css base in resources/css/app.css</p>
 
-    {{{ codeToHtml(`@tailwind base;
-@tailwind components;
-@tailwind utilities;`, { lang: 'javascript' }) }}}
+    {{{ codeToHtml(`@import 'tailwindcss';
+
+
+@source "../../node_modules/@jrmc/edge-components/views";
+@source "../views/**/*.edge";
+
+@plugin "daisyui";`, { lang: 'css' }) }}}
 
     <h3>Alpine setup (optional)</h3>
 
