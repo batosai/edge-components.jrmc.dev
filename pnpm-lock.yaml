@@ -33,8 +33,8 @@ importers:
         specifier: ^1.2.16
         version: 1.2.16
       '@jrmc/edge-components':
-        specifier: file:../packages/edge-components
-        version: file:../packages/edge-components(alpinejs@3.14.8)(daisyui@5.0.0-beta.7)(tailwindcss@4.0.6)
+        specifier: ^3.0.0-beta.1
+        version: 3.0.0-beta.1(alpinejs@3.14.8)(daisyui@5.0.0-beta.7)(tailwindcss@4.0.6)
       '@vinejs/vine':
         specifier: ^3.0.0
         version: 3.0.0
@@ -683,12 +683,12 @@ packages:
   '@jridgewell/trace-mapping@0.3.9':
     resolution: {integrity: sha512-3Belt6tdc8bPgAtbcmdtNJlirVoTmEb5e2gC94PnkwEW9jI6CAHUeoG85tjWP5WquqfavoMtMwiG4P926ZKKuQ==}
 
-  '@jrmc/edge-components@file:../packages/edge-components':
-    resolution: {directory: ../packages/edge-components, type: directory}
+  '@jrmc/edge-components@3.0.0-beta.1':
+    resolution: {integrity: sha512-W9LZ/VGDOPZtIdZ9yH1coroBJMT19l17t880sOH3DhPi/bo2yxWszcBwlY7WuJtSTmhOCP7fNKMNCPoLyHDZpQ==}
     engines: {node: '>=20.12.0'}
     peerDependencies:
       alpinejs: ^3.13.0
-      daisyui: ^5.0.0
+      daisyui: ^5.0.0-beta.7
       tailwindcss: ^4.0.0
     peerDependenciesMeta:
       alpinejs:
@@ -3955,7 +3955,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@jrmc/edge-components@file:../packages/edge-components(alpinejs@3.14.8)(daisyui@5.0.0-beta.7)(tailwindcss@4.0.6)':
+  '@jrmc/edge-components@3.0.0-beta.1(alpinejs@3.14.8)(daisyui@5.0.0-beta.7)(tailwindcss@4.0.6)':
     dependencies:
       daisyui: 5.0.0-beta.7
       tailwindcss: 4.0.6
