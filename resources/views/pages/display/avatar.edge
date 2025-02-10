@@ -24,14 +24,14 @@
   @!section({
     title: 'Avatar size',
     about: route('about-avatar'),
-    template: `@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-32 rounded' })
-@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-20 rounded' })
-@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-16 rounded' })
-@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-8 rounded' })`
+    template: `@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-32 rounded-sm' })
+@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-20 rounded-sm' })
+@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-16 rounded-sm' })
+@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-8 rounded-sm' })`
   })
 
   @!section({
-    title: 'Avatar rounded',
+    title: 'Avatar rounded-sm',
     about: route('about-avatar'),
     template: `@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-24 rounded-xl' })
 @!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: 'w-24 rounded-full' })`
@@ -66,9 +66,9 @@
   })
 
   @!section({
-    title: 'Avatar ring',
+    title: 'Avatar ring-3',
     about: route('about-avatar'),
-    template: `@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: ['w-24', 'rounded-full', 'ring', 'ring-primary', 'ring-offset-base-100', 'ring-offset-2'] })`
+    template: `@!jrmc.avatar({ url: 'https://picsum.photos/id/64/192/192', class: ['w-24', 'rounded-full', 'ring-3', 'ring-primary', 'ring-offset-base-100', 'ring-offset-2'] })`
   })
 
   @!section({
