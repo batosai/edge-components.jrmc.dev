@@ -25,7 +25,7 @@
   @!section({
     title: 'Tab bordered',
     about: route('about-tab'),
-    template: `@jrmc.tabs({ class: 'tabs-bordered' })
+    template: `@jrmc.tabs({ class: 'tabs-border' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -33,9 +33,9 @@
   })
 
   @!section({
-    title: 'Tab lifted',
+    title: 'Tab lift',
     about: route('about-tab'),
-    template: `@jrmc.tabs({ class: 'tabs-lifted' })
+    template: `@jrmc.tabs({ class: 'tabs-lift' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -43,9 +43,9 @@
   })
 
   @!section({
-    title: 'Tab boxed',
+    title: 'Tab box',
     about: route('about-tab'),
-    template: `@jrmc.tabs({ class: 'tabs-boxed' })
+    template: `@jrmc.tabs({ class: 'tabs-box' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -56,7 +56,7 @@
     title: 'Tab sizes',
     about: route('about-tab'),
     template: `<!-- xs -->
-@jrmc.tabs({ class: 'tabs-boxed tabs-xs' })
+@jrmc.tabs({ class: 'tabs-box tabs-xs' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2',  active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -64,7 +64,7 @@
 <br />
 
 <!-- sm -->
-@jrmc.tabs({ class: 'tabs-boxed tabs-sm' })
+@jrmc.tabs({ class: 'tabs-box tabs-sm' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -72,7 +72,7 @@
 <br />
 
 <!-- md -->
-@jrmc.tabs({ class: 'tabs-boxed'})
+@jrmc.tabs({ class: 'tabs-box'})
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
@@ -80,7 +80,7 @@
 <br />
 
 <!-- lg -->
-@jrmc.tabs({ class: 'tabs-boxed tabs-lg' })
+@jrmc.tabs({ class: 'tabs-box tabs-lg' })
   @!jrmc.tabs.tab({ text: 'Tab 1' })
   @!jrmc.tabs.tab({ text: 'Tab 2', active: true })
   @!jrmc.tabs.tab({ text: 'Tab 3' })
