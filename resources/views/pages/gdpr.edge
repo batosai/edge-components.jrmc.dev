@@ -12,6 +12,10 @@
     ]
   })
 
+  @if(up.isDrawer())
+    @!jrmc.button({ 'up-dismiss': 'true', text: 'close', class: 'm-4' })
+  @end
+
   <div class="m-4 max-w-none prose">
     <div class="border-b py-10">
       <h1 class="pt-5 text-3xl font-semibold md:text-5xl">

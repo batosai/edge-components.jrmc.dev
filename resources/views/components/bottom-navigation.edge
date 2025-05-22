@@ -8,6 +8,7 @@
     </button>
 
     @jrmc.modal({ button: { class: 'btn-ghost p-0 hover:bg-base-100 active:bg-base-100 shrink' } })
+      @!jrmc.button({ text: 'x', class: 'btn-sm btn-circle absolute right-2 top-2', ...$context.event.close })
       <p class="mb-4 text-lg font-bold">Theme</p>
 
       @!button.theme({ theme: 'light' })
